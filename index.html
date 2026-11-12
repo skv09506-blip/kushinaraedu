@@ -3,206 +3,229 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KushinaraEdu.in - Career Counselling & Guidance | Kushinagar</title>
-<meta name="description" content="Kushinagar की No.1 Career Counselling वेबसाइट। 10th, 12th के बाद क्या करें? BNYS, Nursing, B.Ed, ITI, NEET की पूरी गाइडेंस।">
+<title>KushinaraEdu.in | Kushinagar No.1 Career Counselling - 10th, 12th के बाद क्या करें?</title>
+<meta name="description" content="Kushinagar की No.1 Career Counselling वेबसाइट। BNYS, Nursing, B.Ed, MBBS, NEET, ITI, Polytechnic, UPSC की सही गाइडेंस। 1st Session FREE।">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Hind:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
-:root{--blue:#0f2a5c;--orange:#ff6b00;--green:#0aa65a;--light:#f4f7ff}
-body{background:#fff;color:#222}
-a{text-decoration:none}
-header{background:var(--blue);color:#fff;padding:12px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
-.logo{font-size:22px;font-weight:900}.logo span{color:var(--orange)}
-nav a{color:#fff;margin:0 12px;font-weight:600;font-size:15px}
-.btn{background:var(--orange);color:#fff;padding:11px 22px;border-radius:30px;font-weight:700;display:inline-block;border:none;cursor:pointer}
-.hero{background:linear-gradient(90deg,#0f2a5c,#1a4aa0);color:#fff;padding:50px 5%;display:flex;gap:30px;align-items:center;flex-wrap:wrap}
-.hero h1{font-size:38px;line-height:1.2}.hero h1 span{color:#ffcc00}
-.hero p{margin:18px 0;font-size:17px;opacity:.9}
-.hero-box{background:#fff;color:#222;padding:22px;border-radius:16px;width:340px;box-shadow:0 10px 30px rgba(0,0,0,.2)}
-.hero-box h3{margin-bottom:12px}
-.hero-box input,.hero-box select{width:100%;padding:12px;margin:7px 0;border:1px solid #ddd;border-radius:8px}
-.section{padding:45px 5%}
-.section h2{text-align:center;font-size:30px;color:var(--blue);margin-bottom:8px}
-.section p.sub{text-align:center;color:#666;margin-bottom:30px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-.card{border:1px solid #eee;border-radius:14px;padding:20px;background:#fff;box-shadow:0 4px 15px rgba(0,0,0,.05)}
-.card h3{color:var(--blue);margin:10px 0}
-.card p{font-size:14px;color:#555;line-height:1.6}
-.badge{background:#e8f5ff;color:var(--blue);padding:5px 10px;border-radius:20px;font-size:12px;font-weight:700}
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--blue:#0B2A5B;--blue2:#143F85;--orange:#FF6B00;--orange2:#FF8A2A;--green:#0AA65A;--light:#F4F7FF;--dark:#111827;--grey:#6B7280;--border:#E5E7EB}
+body{font-family:'Inter','Hind',Arial,sans-serif;background:#fff;color:var(--dark);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{max-width:1180px;margin:0 auto;padding:0 18px}
+/* TOP BAR */
+.topbar{background:#071E42;color:#fff;font-size:13px;padding:8px 0}
+.topbar .container{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.topbar b{color:#FFC107}
+/* HEADER */
+header{position:sticky;top:0;z-index:100;background:#fff;box-shadow:0 2px 20px rgba(0,0,0,.07);border-bottom:1px solid #eee}
+.header-in{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;max-width:1180px;margin:0 auto}
+.logo{font-size:24px;font-weight:900;line-height:1;letter-spacing:-.5px}
+.logo span{color:var(--orange)}
+.logo small{display:block;font-size:11px;font-weight:600;letter-spacing:1.5px;color:var(--grey);margin-top:3px}
+nav{display:flex;gap:22px}
+nav a{font-size:14.5px;font-weight:600;color:#1F2937}
+nav a:hover{color:var(--orange)}
+.btn{display:inline-flex;align-items:center;gap:6px;background:var(--orange);color:#fff;padding:12px 22px;border-radius:999px;font-weight:700;font-size:14.5px;border:none;cursor:pointer;box-shadow:0 6px 18px rgba(255,107,0,.3)}
+.btn:hover{background:#E65E00}
+.btn-white{background:#fff;color:var(--blue);box-shadow:0 6px 18px rgba(0,0,0,.15)}
+.btn-outline{background:#fff;color:var(--blue);border:1.5px solid #D1D5DB;box-shadow:none}
+.btn-green{background:#0AA65A;box-shadow:0 6px 18px rgba(10,166,90,.3)}
+/* HERO */
+.hero{background:linear-gradient(135deg,#0B2A5B 0%,#143F85 55%,#1E5BBF 100%);color:#fff;padding:48px 0 56px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:32px;align-items:center}
+.pill{display:inline-flex;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:7px 13px;border-radius:999px;font-size:13px;font-weight:600}
+.hero h1{font-size:46px;line-height:1.12;font-weight:900;margin:16px 0 14px;letter-spacing:-.5px}
+.hero h1 em{font-style:normal;color:#FFC107}
+.hero p{font-size:17px;opacity:.92;max-width:560px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.trust{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;font-size:13.5px;font-weight:600}
+.trust span{background:rgba(255,255,255,.12);padding:8px 12px;border-radius:999px}
+.hero-card{background:#fff;color:#111;border-radius:20px;padding:22px;box-shadow:0 20px 50px rgba(0,0,0,.25)}
+.hero-card h3{font-size:19px;margin-bottom:4px}
+.hero-card p{font-size:13.5px;color:var(--grey);margin-bottom:14px}
+.hero-card input,.hero-card select{width:100%;padding:13px 12px;margin:6px 0;border:1.5px solid #E5E7EB;border-radius:11px;font-size:14px;outline:none;background:#F9FAFB}
+.hero-card input:focus,.hero-card select:focus{border-color:var(--orange);background:#fff}
+.hero-card .btn{width:100%;justify-content:center;padding:14px;margin-top:8px}
+.small-note{text-align:center;font-size:12px;color:#6B7280;margin-top:10px}
+/* STATS */
+.stats{background:#fff;margin:-22px auto 0;position:relative;z-index:2;max-width:1180px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden;border:1px solid #eee}
+.stat{padding:20px;text-align:center;border-right:1px solid #eee}
+.stat:last-child{border:none}
+.stat b{font-size:26px;color:var(--blue);display:block}
+.stat span{font-size:13px;color:var(--grey);font-weight:600}
+/* SECTION */
+.section{padding:52px 0}
+.section h2{font-size:32px;font-weight:900;color:var(--blue);text-align:center;line-height:1.2}
+.section .sub{text-align:center;color:var(--grey);margin:10px auto 28px;max-width:680px;font-size:16px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{border:1px solid var(--border);border-radius:18px;padding:20px;background:#fff;transition:.2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.08)}
+.badge{display:inline-block;background:#EAF2FF;color:var(--blue);padding:5px 10px;border-radius:999px;font-size:11px;font-weight:800;letter-spacing:.4px}
+.badge.orange{background:#FFF1E6;color:#C2410C}
+.badge.green{background:#E6F9EF;color:#067647}
+.card h3{font-size:18px;margin:12px 0 6px;color:var(--blue)}
+.card p{font-size:14px;color:#4B5563}
+.card .meta{margin:12px 0;font-size:13.5px;line-height:1.7}
+.card .btn{padding:10px 18px;font-size:13.5px}
+/* CAREER */
+.career{background:var(--light)}
+.career-box{background:#FFF8E6;border:1px solid #FFE2B3;border-radius:18px;padding:24px;max-width:900px;margin:0 auto 22px;text-align:center;font-size:16.5px;line-height:1.8}
+.career-box b{color:var(--blue)}
+.pills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:16px 0 28px}
+.pills span{background:var(--blue);color:#fff;padding:9px 15px;border-radius:999px;font-size:13.5px;font-weight:600}
+.course-wrap{max-width:900px;margin:0 auto}
+.course-wrap h3{font-size:20px;color:var(--blue);margin:26px 0 10px;text-align:left}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.04)}
+th{background:var(--blue);color:#fff;padding:13px 14px;text-align:left;font-size:14px}
+td{padding:12px 14px;border-bottom:1px solid #F3F4F6;font-size:14px}
+tr:last-child td{border-bottom:none}
+/* TEST */
+.test-box{background:#fff;border:1px solid var(--border);border-radius:20px;padding:26px;max-width:760px;margin:0 auto;box-shadow:0 8px 30px rgba(0,0,0,.05)}
+.test-box h3{font-size:16px;margin:16px 0 10px}
+.opt{display:inline-block;margin:5px 6px 5px 0;padding:11px 16px;border-radius:999px;border:1.5px solid #D1D5DB;background:#fff;cursor:pointer;font-size:14px;font-weight:600}
+.opt.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+/* COUNSELLOR */
 .counsellor{text-align:center}
-.counsellor img{width:90px;height:90px;border-radius:50%;object-fit:cover;background:#ddd}
-.price{font-size:22px;font-weight:800;color:var(--green);margin:10px 0}
-.test{background:var(--light);border-radius:16px;padding:30px}
-.test button{margin:6px;padding:11px 18px;border-radius:20px;border:1px solid #ccc;background:#fff;cursor:pointer}
-.test button.active{background:var(--blue);color:#fff}
-.career-box{background:#fff8e6;border:1px solid #ffe2b3;border-radius:16px;padding:26px;margin:0 auto;max-width:900px;text-align:center;line-height:1.8;font-size:17px;color:#333}
-.subject-pills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:20px 0}
-.subject-pills span{background:#0f2a5c;color:#fff;padding:9px 16px;border-radius:20px;font-size:14px;font-weight:600}
-.course-table{width:100%;border-collapse:collapse;margin:10px 0 25px;background:#fff;border-radius:12px;overflow:hidden}
-.course-table th{background:#0f2a5c;color:#fff;padding:12px;text-align:left;font-size:15px}
-.course-table td{padding:11px 12px;border-bottom:1px solid #eee;font-size:14px}
-.course-table tr:last-child td{border-bottom:none}
-footer{background:#0a1e40;color:#fff;padding:35px 5%;text-align:center}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 20px;border-radius:50px;font-weight:700;z-index:999;box-shadow:0 5px 20px rgba(0,0,0,.3)}
-@media(max-width:700px){.hero h1{font-size:28px}nav{display:none}}
+.counsellor img{width:92px;height:92px;border-radius:50%;object-fit:cover;background:#E5E7EB}
+.price{font-size:20px;font-weight:800;color:var(--green);margin:10px 0}
+/* FAQ */
+.faq{max-width:800px;margin:0 auto}
+.faq details{background:#fff;border:1px solid var(--border);border-radius:14px;padding:16px 18px;margin:10px 0}
+.faq summary{font-weight:700;cursor:pointer;font-size:15px;color:var(--blue)}
+.faq p{font-size:14px;color:#4B5563;margin-top:8px}
+/* CONTACT */
+.contact-card{background:linear-gradient(135deg,#0B2A5B,#143F85);color:#fff;border-radius:20px;padding:32px;text-align:center}
+.contact-card h2{color:#fff}
+.contact-card p{opacity:.9}
+/* FOOTER */
+footer{background:#071E42;color:#D1D5DB;padding:38px 0 18px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:24px;max-width:1180px;margin:0 auto;padding:0 18px}
+footer h3,footer h4{color:#fff;margin-bottom:12px}
+footer a{display:block;color:#D1D5DB;font-size:14px;margin:7px 0}
+footer p{font-size:14px}
+.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:26px;padding-top:14px;text-align:center;font-size:12.5px;opacity:.7}
+.whatsapp{position:fixed;bottom:18px;right:18px;background:#25D366;color:#fff;padding:14px 20px;border-radius:999px;font-weight:800;z-index:999;box-shadow:0 8px 24px rgba(0,0,0,.3);font-size:14px}
+@media(max-width:820px){nav{display:none}.hero-grid{grid-template-columns:1fr}.hero h1{font-size:32px}.grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr}.section h2{font-size:26px}}
 </style>
 </head>
 <body>
-<header>
-<div class="logo">Kushinara<span>Edu.in</span></div>
-<nav><a href="#home">Home</a><a href="#courses">Courses</a><a href="#career">Career Opportunity</a><a href="#test">Career Test</a><a href="#counsellor">Counsellors</a><a href="#contact">Contact</a></nav>
-<a class="btn" href="https://wa.me/919335005055">Free Counselling</a>
-</header>
-<section class="hero" id="home">
-<div style="flex:1;min-width:300px">
-<div style="background:#ff6b00;display:inline-block;padding:5px 12px;border-radius:20px;font-size:13px">🔥 Kushinagar • Padrauna • Deoria • Gorakhpur</div>
-<h1>10th / 12th के बाद <span>क्या करें?</span><br>अब Confusion नहीं, Clear Career।</h1>
-<p>1,00,000+ छात्रों की गाइडेंस। BNYS, Nursing, B.Ed, ITI, NEET, UPSC, Polytechnic - सही कोर्स, सही कॉलेज, सही फीस।</p>
-<a class="btn" href="#test">FREE Career Test लें →</a>
-<a class="btn" style="background:#fff;color:#0f2a5c;margin-left:8px" href="#courses">Courses देखें</a>
-<p style="font-size:13px;margin-top:12px">⭐ 4.9 Rating | 500+ Counsellors | 100% Free First Session</p>
+
+<div class="topbar"><div class="container"><span>📍 Padrauna, Kushinagar, UP - 274304 | <b>1st Session 100% FREE</b></span><span>📞 +91 93350 05055 &nbsp;|&nbsp; ✉️ hello@kushinaraedu.in</span></div></div>
+
+<header><div class="header-in">
+<div class="logo">Kushinara<span>Edu.in</span><small>CAREER COUNSELLING • KUSHINAGAR</small></div>
+<nav><a href="#home">Home</a><a href="#courses">Courses</a><a href="#career">Career Opportunity</a><a href="#test">Career Test</a><a href="#counsellor">Counsellors</a><a href="#faq">FAQ</a></nav>
+<a class="btn" href="https://wa.me/919335005055?text=Namaste, Mujhe Free Career Counselling Chahiye">Free Counselling →</a>
+</div></header>
+
+<section class="hero" id="home"><div class="container"><div class="hero-grid">
+<div>
+<span class="pill">🔥 Kushinagar • Padrauna • Deoria • Gorakhpur • Maharajganj</span>
+<h1>10th / 12th के बाद <em>क्या करें?</em><br>अब Confusion नहीं,<br>Clear Career.</h1>
+<p>सही कोर्स, सही कॉलेज, सही फीस। BNYS, Nursing, B.Ed, MBBS, NEET, ITI, Polytechnic, UPSC - सबकी एक ही जगह Expert Guidance।</p>
+<div class="hero-btns"><a class="btn" href="#test">FREE Career Test लें →</a><a class="btn btn-white" href="#courses">Courses देखें</a></div>
+<div class="trust"><span>⭐ 4.9 / 5 Rating</span><span>👨‍🎓 1,00,000+ Students Guided</span><span>✅ 100% Free First Session</span></div>
 </div>
-<div class="hero-box">
-<h3>Free Counselling Form</h3>
-<input type="text" id="name" placeholder="आपका नाम">
-<input type="tel" id="phone" placeholder="Mobile Number">
-<select><option>Class चुनें</option><option>Class 10th</option><option>Class 12th - Science</option><option>Class 12th - Arts</option><option>Class 12th - Commerce</option><option>Graduate</option></select>
-<select><option>Interested Course</option><option>BNYS</option><option>Nursing / ANM / GNM</option><option>B.Ed / D.El.Ed</option><option>ITI / Polytechnic</option><option>NEET / MBBS</option><option>UPSC / Govt Job</option></select>
-<button class="btn" style="width:100%" onclick="submitForm()">Free Guidance पाएं</button>
-<p id="msg" style="color:green;font-weight:700;margin-top:8px"></p>
+<div class="hero-card">
+<h3>Get Free Counselling</h3><p>फॉर्म भरो, 10 मिनट में कॉल आएगी। कोई फीस नहीं।</p>
+<input type="text" id="name" placeholder="आपका पूरा नाम *">
+<input type="tel" id="phone" placeholder="Mobile Number *">
+<select id="cls"><option>Class चुनें</option><option>Class 10th</option><option>Class 12th - Science (PCB)</option><option>Class 12th - Science (PCM)</option><option>Class 12th - Arts</option><option>Class 12th - Commerce</option><option>Graduate</option></select>
+<select id="course"><option>Interested Course चुनें</option><option>BNYS - Naturopathy Doctor</option><option>Nursing / ANM / GNM / BSc Nursing</option><option>B.Ed / D.El.Ed - Teacher</option><option>ITI / Polytechnic</option><option>NEET / MBBS / BAMS / BHMS</option><option>Pharmacy / Paramedical</option><option>UPSC / Govt Job / SSC / Police</option><option>समझ नहीं आ रहा - Counselling चाहिए</option></select>
+<button class="btn" onclick="submitForm()">Free Guidance पाएं →</button>
+<p id="msg" style="color:green;font-weight:700;margin-top:10px;font-size:14px"></p>
+<p class="small-note">🔒 आपकी जानकारी 100% Private रहेगी। No Spam.</p>
 </div>
-</section>
-<section class="section" id="courses">
-<h2>Popular Career Options</h2>
-<p class="sub">Kushinagar के छात्रों के लिए सबसे ज्यादा डिमांड वाले कोर्स</p>
+</div></div></section>
+
+<div class="container"><div class="stats">
+<div class="stat"><b>1,00,000+</b><span>Students Guided</span></div>
+<div class="stat"><b>500+</b><span>Expert Counsellors</span></div>
+<div class="stat"><b>120+</b><span>Courses Covered</span></div>
+<div class="stat"><b>4.9 ★</b><span>Google Rating</span></div>
+</div></div>
+
+<section class="section" id="courses"><div class="container">
+<h2>Popular Career Options</h2><p class="sub">Kushinagar के छात्रों के लिए सबसे ज्यादा डिमांड वाले कोर्स - फीस, सैलरी और नौकरी के साथ</p>
 <div class="grid">
-<div class="card"><span class="badge">TOP CHOICE</span><h3>🩺 BNYS - Naturopathy</h3><p>बिना ऑपरेशन, बिना दवा - Natural Doctor बनो। 5.5 साल कोर्स। सरकारी + प्राइवेट दोनों में नौकरी।</p><p><b>Fees:</b> ₹60k - 1.5L / Year<br><b>Salary:</b> ₹35k - 80k</p><a href="https://wa.me/919335005055?text=BNYS की जानकारी चाहिए" class="btn">Details लें</a></div>
-<div class="card"><span class="badge">HIGH DEMAND</span><h3>👩‍⚕️ Nursing - ANM / GNM / B.Sc</h3><p>हर अस्पताल को नर्स चाहिए। विदेश में भी सबसे ज्यादा डिमांड। 2 से 4 साल कोर्स।</p><p><b>Fees:</b> ₹50k - 1L / Year<br><b>Salary:</b> ₹25k - 60k</p><a href="https://wa.me/919335005055?text=Nursing की जानकारी चाहिए" class="btn">Details लें</a></div>
-<div class="card"><span class="badge">GOVT JOB</span><h3>📚 B.Ed / D.El.Ed</h3><p>Teacher बनना है तो यही रास्ता है। सरकारी स्कूल में पक्की नौकरी।</p><p><b>Fees:</b> ₹40k - 80k<br><b>Salary:</b> ₹40k - 70k</p><a href="https://wa.me/919335005055?text=B.Ed की जानकारी चाहिए" class="btn">Details लें</a></div>
-<div class="card"><span class="badge">QUICK JOB</span><h3>🔧 ITI / Polytechnic</h3><p>10th के बाद जल्दी नौकरी। Electrician, Fitter, Computer, Mechanical।</p><p><b>Fees:</b> ₹15k - 40k<br><b>Salary:</b> ₹18k - 40k</p><a href="https://wa.me/919335005055?text=ITI की जानकारी चाहिए" class="btn">Details लें</a></div>
-<div class="card"><span class="badge">MEDICAL</span><h3>🩸 NEET / Paramedical</h3><p>MBBS, BAMS, BUMS, DMLT, X-Ray, Physiotherapy।</p><p><b>Fees:</b> Varies<br><b>Salary:</b> ₹30k - 1L+</p><a href="https://wa.me/919335005055?text=NEET की जानकारी चाहिए" class="btn">Details लें</a></div>
-<div class="card"><span class="badge">SARKARI</span><h3>🇮🇳 UPSC / UP Police / SSC</h3><p>बिना ज्यादा फीस के सरकारी नौकरी की तैयारी। सही रणनीति से 1 साल में सफलता।</p><p><b>Fees:</b> ₹10k - 30k<br><b>Salary:</b> ₹35k - 80k</p><a href="https://wa.me/919335005055?text=Govt Job की जानकारी चाहिए" class="btn">Details लें</a></div>
-</div>
-</section>
-<section class="section" id="career" style="background:#f4f7ff">
-<h2>Career Opportunity - सभी Subjects, सभी करियर</h2>
-<p class="sub">एक ही जगह से शुरू होते हैं सैकड़ों करियर</p>
-<div class="career-box">
-<b>हमारे बच्चे अपने करियर के विषय में दो या चार ऑप्शन जानते हैं।</b><br>
-हम उन्हें सैकड़ों विकल्प उनकी रुचि के अनुसार दिखा सकते हैं।<br>
-गलत विषय चुनना स्टूडेंट के पास Information का कम होना है।<br>
-<b>Career Counselling बच्चों के फ्यूचर के लिए बहुत जरूरी है।</b>
-</div>
-<div class="subject-pills">
-<span>📘 Science</span><span>🔢 Math</span><span>🌾 Agriculture</span><span>💼 Management</span><span>🐄 Veterinary</span><span>🛠️ Vocational Training</span><span>🎨 Art</span><span>📊 Commerce</span>
-</div>
-<h3 style="text-align:center;color:#0f2a5c;margin:25px 0 10px">1. Medical - Doctor बनने वाले कोर्स</h3>
-<table class="course-table"><tr><th>कोर्स</th><th>क्या बनोगे</th></tr>
-<tr><td><b>MBBS</b></td><td>MBBS Doctor</td></tr>
-<tr><td><b>BAMS</b></td><td>Ayurvedic Doctor</td></tr>
-<tr><td><b>BHMS</b></td><td>Homeopathic Doctor</td></tr>
-<tr><td><b>BDS</b></td><td>Dental Doctor</td></tr>
-<tr><td><b>BNYS</b></td><td>Naturopathy & Yoga Doctor</td></tr>
-<tr><td><b>BEMS (EH)</b></td><td>Electro Homeopathy Doctor</td></tr></table>
-<h3 style="text-align:center;color:#0f2a5c;margin:20px 0 10px">2. Pharmacy</h3>
-<table class="course-table"><tr><th>कोर्स</th><th>Duration</th></tr>
-<tr><td><b>B. Pharmacy</b></td><td>4 साल</td></tr>
-<tr><td><b>D. Pharmacy</b></td><td>2 साल</td></tr>
-<tr><td><b>M. Pharma</b></td><td>2 साल</td></tr>
-<tr><td><b>Pharm.D</b></td><td>6 साल</td></tr></table>
-<h3 style="text-align:center;color:#0f2a5c;margin:20px 0 10px">3. Nursing</h3>
-<table class="course-table"><tr><th>कोर्स</th><th>Duration</th></tr>
-<tr><td><b>ANM</b></td><td>2 साल</td></tr>
-<tr><td><b>GNM</b></td><td>3 साल</td></tr>
-<tr><td><b>P.BSc Nursing</b></td><td>2 साल</td></tr>
-<tr><td><b>BSc Nursing</b></td><td>4 साल</td></tr>
-<tr><td><b>MSc Nursing</b></td><td>2 साल</td></tr></table>
-<h3 style="text-align:center;color:#0f2a5c;margin:20px 0 10px">4. Paramedical</h3>
-<table class="course-table"><tr><th>कोर्स</th><th>Type</th></tr>
-<tr><td><b>Diploma in OT Technician, DMLT, DPT, DHT</b></td><td>Diploma</td></tr>
-<tr><td><b>BSc MLT, BPT, BSc OT, BSc Anaesthesia, BSc Radiology</b></td><td>Degree</td></tr></table>
-<h3 style="text-align:center;color:#0f2a5c;margin:20px 0 10px">5. Technical / Engineering</h3>
-<table class="course-table"><tr><th>कोर्स</th><th>Duration</th></tr>
-<tr><td><b>B.Tech</b></td><td>4 साल</td></tr>
-<tr><td><b>Polytechnic</b></td><td>3 साल</td></tr>
-<tr><td><b>M.Tech</b></td><td>2 साल</td></tr></table>
-<h3 style="text-align:center;color:#0f2a5c;margin:20px 0 10px">6. Law</h3>
-<table class="course-table"><tr><th>कोर्स</th><th>Duration</th></tr>
-<tr><td><b>BA LLB</b></td><td>5 साल</td></tr>
-<tr><td><b>LLB</b></td><td>3 साल</td></tr>
-<tr><td><b>LLM</b></td><td>1 साल / 2 साल</td></tr></table>
-<h3 style="text-align:center;color:#0f2a5c;margin:20px 0 10px">7. Education - Teacher</h3>
-<table class="course-table"><tr><th>कोर्स</th><th>के लिए</th></tr>
-<tr><td><b>B.Ed / D.Ed / D.El.Ed / M.Ed</b></td><td>Primary से Senior Teacher तक</td></tr></table>
-<h3 style="text-align:center;color:#0f2a5c;margin:20px 0 10px">8. Agriculture & Other Graduation</h3>
-<table class="course-table"><tr><th>कोर्स</th><th>Field</th></tr>
-<tr><td><b>BSc Agriculture / MSc Agriculture</b></td><td>Agriculture</td></tr>
-<tr><td><b>B.Com / B.A / BSc Science / BSc Math</b></td><td>Graduation</td></tr>
-<tr><td><b>B.Lib / M.Lib</b></td><td>Library Science</td></tr></table>
-<div style="text-align:center;margin-top:20px"><a class="btn" href="https://wa.me/919335005055?text=Mujhe Career Opportunity ki poori list chahiye">इसमें से किसी भी कोर्स की जानकारी लें →</a></div>
-</section>
-<section class="section test" id="test">
-<h2>2 मिनट का FREE Career Test</h2>
-<p class="sub">अपनी रुचि चुनो, हम बताएँगे तुम्हारे लिए बेस्ट करियर क्या है</p>
+<div class="card"><span class="badge orange">🔥 TOP CHOICE</span><h3>🩺 BNYS - Naturopathy Doctor</h3><p>बिना ऑपरेशन, बिना दवा - Natural Doctor बनो। सरकारी + प्राइवेट दोनों में नौकरी।</p><p class="meta"><b>Duration:</b> 5.5 साल<br><b>Fees:</b> ₹60,000 - 1.5 Lakh / Year<br><b>Salary:</b> ₹35,000 - ₹80,000 / Month</p><a class="btn" href="https://wa.me/919335005055?text=BNYS की पूरी जानकारी चाहिए">Details लें →</a></div>
+<div class="card"><span class="badge green">HIGH DEMAND</span><h3>👩‍⚕️ Nursing - ANM / GNM / B.Sc</h3><p>हर अस्पताल को नर्स चाहिए। विदेश में भी सबसे ज्यादा डिमांड।</p><p class="meta"><b>Duration:</b> 2 - 4 साल<br><b>Fees:</b> ₹50,000 - 1 Lakh / Year<br><b>Salary:</b> ₹25,000 - ₹60,000 / Month</p><a class="btn" href="https://wa.me/919335005055?text=Nursing की पूरी जानकारी चाहिए">Details लें →</a></div>
+<div class="card"><span class="badge">GOVT JOB</span><h3>📚 B.Ed / D.El.Ed - Teacher</h3><p>Teacher बनना है तो यही रास्ता है। सरकारी स्कूल में पक्की नौकरी।</p><p class="meta"><b>Duration:</b> 2 साल<br><b>Fees:</b> ₹40,000 - ₹80,000<br><b>Salary:</b> ₹40,000 - ₹70,000 / Month</p><a class="btn" href="https://wa.me/919335005055?text=B.Ed की पूरी जानकारी चाहिए">Details लें →</a></div>
+<div class="card"><span class="badge orange">QUICK JOB</span><h3>🔧 ITI / Polytechnic</h3><p>10th के बाद जल्दी नौकरी। Electrician, Fitter, Computer, Mechanical।</p><p class="meta"><b>Duration:</b> 1 - 3 साल<br><b>Fees:</b> ₹15,000 - ₹40,000<br><b>Salary:</b> ₹18,000 - ₹40,000 / Month</p><a class="btn" href="https://wa.me/919335005055?text=ITI / Polytechnic की जानकारी चाहिए">Details लें →</a></div>
+<div class="card"><span class="badge">MEDICAL</span><h3>🩸 NEET / Paramedical</h3><p>MBBS, BAMS, BHMS, BUMS, DMLT, X-Ray, Physiotherapy, OT Technician।</p><p class="meta"><b>Duration:</b> 2 - 5.5 साल<br><b>Fees:</b> College के अनुसार<br><b>Salary:</b> ₹30,000 - ₹1,00,000+</p><a class="btn" href="https://wa.me/919335005055?text=NEET / Paramedical की जानकारी चाहिए">Details लें →</a></div>
+<div class="card"><span class="badge green">SARKARI</span><h3>🇮🇳 UPSC / UP Police / SSC</h3><p>बिना ज्यादा फीस के सरकारी नौकरी की तैयारी। सही रणनीति से 1 साल में सफलता।</p><p class="meta"><b>Duration:</b> 1 साल तैयारी<br><b>Fees:</b> ₹10,000 - ₹30,000<br><b>Salary:</b> ₹35,000 - ₹80,000 / Month</p><a class="btn" href="https://wa.me/919335005055?text=Govt Job की जानकारी चाहिए">Details लें →</a></div>
+</div></div></section>
+
+<section class="section career" id="career"><div class="container">
+<h2>Career Opportunity - सभी Subjects, सभी करियर</h2><p class="sub">एक ही जगह से शुरू होते हैं सैकड़ों करियर। नीचे तुम्हारे दोनों Handwritten पेज की पूरी लिस्ट है।</p>
+<div class="career-box"><b>हमारे बच्चे अपने करियर के विषय में दो या चार ऑप्शन जानते हैं।</b><br>हम उन्हें सैकड़ों विकल्प उनकी रुचि के अनुसार दिखा सकते हैं।<br>गलत विषय चुनना स्टूडेंट के पास Information का कम होना है।<br><b>Career Counselling बच्चों के फ्यूचर के लिए बहुत जरूरी है।</b></div>
+<div class="pills"><span>📘 Science</span><span>🔢 Math</span><span>🌾 Agriculture</span><span>💼 Management</span><span>🐄 Veterinary</span><span>🛠️ Vocational Training</span><span>🎨 Art</span><span>📊 Commerce</span></div>
+<div class="course-wrap">
+<h3>1. Medical - Doctor बनने वाले कोर्स</h3>
+<table><tr><th>कोर्स</th><th>क्या बनोगे</th></tr><tr><td><b>MBBS</b></td><td>MBBS Doctor</td></tr><tr><td><b>BAMS</b></td><td>Ayurvedic Doctor</td></tr><tr><td><b>BHMS</b></td><td>Homeopathic Doctor</td></tr><tr><td><b>BDS</b></td><td>Dental Doctor</td></tr><tr><td><b>BNYS</b></td><td>Naturopathy & Yoga Doctor</td></tr><tr><td><b>BEMS (EH)</b></td><td>Electro Homeopathy Doctor</td></tr></table>
+<h3>2. Pharmacy</h3><table><tr><th>कोर्स</th><th>Duration</th></tr><tr><td><b>B. Pharmacy</b></td><td>4 साल</td></tr><tr><td><b>D. Pharmacy</b></td><td>2 साल</td></tr><tr><td><b>M. Pharma</b></td><td>2 साल</td></tr><tr><td><b>Pharm.D</b></td><td>6 साल</td></tr></table>
+<h3>3. Nursing</h3><table><tr><th>कोर्स</th><th>Duration</th></tr><tr><td><b>ANM</b></td><td>2 साल</td></tr><tr><td><b>GNM</b></td><td>3 साल</td></tr><tr><td><b>P.BSc Nursing</b></td><td>2 साल</td></tr><tr><td><b>BSc Nursing</b></td><td>4 साल</td></tr><tr><td><b>MSc Nursing</b></td><td>2 साल</td></tr></table>
+<h3>4. Paramedical</h3><table><tr><th>कोर्स</th><th>Type</th></tr><tr><td><b>OT Technician, DMLT, DPT, DHT</b></td><td>Diploma</td></tr><tr><td><b>BSc MLT, BPT, BSc OT, BSc Anaesthesia, BSc Radiology</b></td><td>Degree</td></tr></table>
+<h3>5. Technical / Engineering</h3><table><tr><th>कोर्स</th><th>Duration</th></tr><tr><td><b>B.Tech</b></td><td>4 साल</td></tr><tr><td><b>Polytechnic</b></td><td>3 साल</td></tr><tr><td><b>M.Tech</b></td><td>2 साल</td></tr></table>
+<h3>6. Law - वकील</h3><table><tr><th>कोर्स</th><th>Duration</th></tr><tr><td><b>BA LLB</b></td><td>5 साल</td></tr><tr><td><b>LLB</b></td><td>3 साल</td></tr><tr><td><b>LLM</b></td><td>1 साल / 2 साल</td></tr></table>
+<h3>7. Education - Teacher</h3><table><tr><th>कोर्स</th><th>के लिए</th></tr><tr><td><b>B.Ed / D.Ed / D.El.Ed / M.Ed</b></td><td>Primary से Senior Teacher तक</td></tr></table>
+<h3>8. Agriculture & Other Graduation</h3><table><tr><th>कोर्स</th><th>Field</th></tr><tr><td><b>BSc Agriculture / MSc Agriculture</b></td><td>Agriculture</td></tr><tr><td><b>B.Com / B.A / BSc Science / BSc Math</b></td><td>Graduation</td></tr><tr><td><b>B.Lib / M.Lib</b></td><td>Library Science</td></tr></table>
+<div style="text-align:center;margin-top:24px"><a class="btn" href="https://wa.me/919335005055?text=Mujhe Career Opportunity ki poori list chahiye">किसी भी कोर्स की Free जानकारी लें →</a></div>
+</div></div></section>
+
+<section class="section" id="test"><div class="container">
+<h2>2 मिनट का FREE Career Test</h2><p class="sub">अपनी रुचि चुनो, हम बताएँगे तुम्हारे लिए बेस्ट करियर क्या है</p>
+<div class="test-box">
 <h3>1. तुम्हें सबसे ज्यादा मजा किसमें आता है?</h3>
-<div id="q1">
-<button onclick="selectOpt(this,'q1')">लोगों की सेवा / इलाज में</button>
-<button onclick="selectOpt(this,'q1')">पढ़ाने / समझाने में</button>
-<button onclick="selectOpt(this,'q1')">मशीन / कंप्यूटर ठीक करने में</button>
-<button onclick="selectOpt(this,'q1')">बिजनेस / पैसे कमाने में</button>
-</div>
-<h3 style="margin-top:18px">2. तुम कितने साल पढ़ना चाहते हो?</h3>
-<div id="q2">
-<button onclick="selectOpt(this,'q2')">1-2 साल - जल्दी नौकरी</button>
-<button onclick="selectOpt(this,'q2')">3-4 साल - अच्छा करियर</button>
-<button onclick="selectOpt(this,'q2')">5+ साल - Doctor / Officer</button>
-</div>
+<div id="q1"><button class="opt" onclick="selectOpt(this,'q1')">लोगों की सेवा / इलाज में</button><button class="opt" onclick="selectOpt(this,'q1')">पढ़ाने / समझाने में</button><button class="opt" onclick="selectOpt(this,'q1')">मशीन / कंप्यूटर ठीक करने में</button><button class="opt" onclick="selectOpt(this,'q1')">बिजनेस / पैसे कमाने में</button></div>
+<h3>2. तुम कितने साल पढ़ना चाहते हो?</h3>
+<div id="q2"><button class="opt" onclick="selectOpt(this,'q2')">1-2 साल - जल्दी नौकरी</button><button class="opt" onclick="selectOpt(this,'q2')">3-4 साल - अच्छा करियर</button><button class="opt" onclick="selectOpt(this,'q2')">5+ साल - Doctor / Officer</button></div>
 <button class="btn" style="margin-top:20px" onclick="showResult()">Result देखें</button>
-<p id="result" style="font-weight:700;font-size:18px;color:#0f2a5c;margin-top:12px"></p>
-</section>
-<section class="section" id="counsellor">
-<h2>हमारे Expert Counsellors</h2>
-<p class="sub">Kushinagar के अपने लोग, जो खुद इन रास्तों से गुजरे हैं</p>
+<p id="result" style="font-weight:700;font-size:17px;color:#0B2A5B;margin-top:12px"></p>
+</div></div></section>
+
+<section class="section" id="counsellor" style="background:#F9FAFB"><div class="container">
+<h2>हमारे Expert Counsellors</h2><p class="sub">Kushinagar के अपने लोग, जो खुद इन रास्तों से गुजरे हैं</p>
 <div class="grid">
-<div class="card counsellor"><img src="https://via.placeholder.com/90"><h3>Dr. [आपका नाम]</h3><p>BNYS Expert<br>5+ Years Experience</p><p class="price">1st Session FREE</p><a class="btn" href="https://wa.me/919335005055">Book Session</a></div>
-<div class="card counsellor"><img src="https://via.placeholder.com/90"><h3>Er. Rahul Kushwaha</h3><p>ITI / Polytechnic Expert<br>Govt Job Guide</p><p class="price">1st Session FREE</p><a class="btn" href="https://wa.me/919335005055">Book Session</a></div>
-<div class="card counsellor"><img src="https://via.placeholder.com/90"><h3>Ms. Priya Singh</h3><p>Nursing / NEET Expert<br>Delhi AIIMS Alumni</p><p class="price">1st Session FREE</p><a class="btn" href="https://wa.me/919335005055">Book Session</a></div>
-</div>
-</section>
-<section class="section" style="background:#fff8e6;border-radius:16px;margin:0 5%">
-<h2>Success Stories - Kushinagar के बच्चे</h2>
+<div class="card counsellor"><img src="https://via.placeholder.com/92"><h3>Dr. [आपका नाम]</h3><p>BNYS Expert<br>5+ Years Experience</p><p class="price">1st Session FREE</p><a class="btn" href="https://wa.me/919335005055">Book Session</a></div>
+<div class="card counsellor"><img src="https://via.placeholder.com/92"><h3>Er. Rahul Kushwaha</h3><p>ITI / Polytechnic Expert<br>Govt Job Guide</p><p class="price">1st Session FREE</p><a class="btn" href="https://wa.me/919335005055">Book Session</a></div>
+<div class="card counsellor"><img src="https://via.placeholder.com/92"><h3>Ms. Priya Singh</h3><p>Nursing / NEET Expert<br>Delhi AIIMS Alumni</p><p class="price">1st Session FREE</p><a class="btn" href="https://wa.me/919335005055">Book Session</a></div>
+</div></div></section>
+
+<section class="section"><div class="container">
+<h2>Success Stories - Kushinagar के बच्चे</h2><p class="sub">ये सब भी कभी Confused थे, आज Set हैं</p>
 <div class="grid">
-<div class="card">⭐⭐⭐⭐⭐<p>"12th के बाद मैं बहुत Confused था। KushinaraEdu ने मुझे BNYS बताया, आज मैं Padrauna में अपना क्लिनिक चला रहा हूँ।"</p><b>- Aman, Padrauna</b></div>
-<div class="card">⭐⭐⭐⭐⭐<p>"ANM करके आज मैं Gorakhpur के अस्पताल में ₹28,000 पर हूँ। Free Counselling ने मेरी जिंदगी बदल दी।"</p><b>- Pooja, Kushinagar</b></div>
-<div class="card">⭐⭐⭐⭐⭐<p>"ITI करके ITI Instructor बन गया। 10th के बाद सही गाइडेंस मिली।"</p><b>- Vikas, Deoria</b></div>
-</div>
-</section>
-<section class="section" id="contact" style="text-align:center">
-<h2>आज ही Free Counselling लो</h2>
-<p class="sub">फॉर्म भरो या सीधे WhatsApp करो - 10 मिनट में जवाब मिलेगा</p>
-<p style="font-size:20px"><b>📍</b> Padrauna, Kushinagar, UP - 274304<br><b>📞</b> +91 93350 05055<br><b>✉️</b> hello@kushinaraedu.in</p><br>
-<a class="btn" href="https://wa.me/919335005055?text=Namaste, Mujhe Career Counselling Chahiye">WhatsApp पर बात करें</a>
-</section>
-<footer>
-<h3>KushinaraEdu.in</h3>
-<p>Kushinagar • Padrauna • Deoria • Gorakhpur • Maharajganj</p>
-<p style="margin-top:10px;font-size:13px;opacity:.7">© 2026 KushinaraEdu.in - Career Counselling & Guidance. All Rights Reserved.</p>
-</footer>
+<div class="card"><p>⭐⭐⭐⭐⭐</p><p style="margin:10px 0">"12th के बाद मैं बहुत Confused था। KushinaraEdu ने मुझे BNYS बताया, आज मैं Padrauna में अपना क्लिनिक चला रहा हूँ।"</p><b>- Aman, Padrauna</b><br><span style="font-size:13px;color:#0AA65A;font-weight:700">BNYS • Clinic Owner</span></div>
+<div class="card"><p>⭐⭐⭐⭐⭐</p><p style="margin:10px 0">"ANM करके आज मैं Gorakhpur के अस्पताल में ₹28,000 पर हूँ। Free Counselling ने मेरी जिंदगी बदल दी।"</p><b>- Pooja, Kushinagar</b><br><span style="font-size:13px;color:#0AA65A;font-weight:700">ANM • Hospital Staff</span></div>
+<div class="card"><p>⭐⭐⭐⭐⭐</p><p style="margin:10px 0">"ITI करके ITI Instructor बन गया। 10th के बाद सही गाइडेंस मिली।"</p><b>- Vikas, Deoria</b><br><span style="font-size:13px;color:#0AA65A;font-weight:700">ITI • Instructor</span></div>
+</div></div></section>
+
+<section class="section" id="faq" style="padding-top:0"><div class="container">
+<h2>अक्सर पूछे जाने वाले सवाल</h2><p class="sub">जवाब नहीं मिला तो WhatsApp पर पूछ लो</p>
+<div class="faq">
+<details><summary>1. Counselling सच में Free है?</summary><p>हाँ, पहली Session 100% Free है। उसमें हम तुम्हारी रुचि, नंबर और बजट के हिसाब से 2-3 बेस्ट ऑप्शन बताते हैं।</p></details>
+<details><summary>2. 10th के बाद क्या करना चाहिए?</summary><p>अगर जल्दी नौकरी चाहिए तो ITI / Polytechnic, अगर Doctor / Nurse बनना है तो 11th में Science (PCB) लो। पूरी गाइडेंस के लिए Career Test लो।</p></details>
+<details><summary>3. BNYS में Admission कैसे होता है?</summary><p>12th PCB + NEET / Direct Admission दोनों ऑप्शन हैं। कॉलेज और फीस के हिसाब से हम बता देंगे।</p></details>
+<details><summary>4. क्या आप Admission भी करवाते हैं?</summary><p>हाँ, सही कॉलेज चुनने से लेकर फॉर्म, डॉक्यूमेंट और फीस तक पूरी मदद करते हैं।</p></details>
+</div></div></section>
+
+<section class="section" style="padding-top:0"><div class="container"><div class="contact-card">
+<h2>आज ही Free Counselling लो</h2><p style="margin:12px 0 20px">फॉर्म भरो या सीधे WhatsApp करो - 10 मिनट में जवाब मिलेगा</p>
+<p style="font-size:17px;line-height:2"><b>📍</b> Padrauna, Kushinagar, UP - 274304<br><b>📞</b> +91 93350 05055 &nbsp;|&nbsp; <b>✉️</b> hello@kushinaraedu.in</p><br>
+<a class="btn btn-green" href="https://wa.me/919335005055?text=Namaste, Mujhe Career Counselling Chahiye">💬 WhatsApp पर बात करें</a>
+</div></div></section>
+
+<footer><div class="footer-grid">
+<div><h3>Kushinara<span style="color:#FF6B00">Edu.in</span></h3><p>Kushinagar की No.1 Career Counselling वेबसाइट। हमारा मकसद है - हर बच्चे को सही करियर, सही कॉलेज और सही फीस की जानकारी मिले।</p><p style="margin-top:12px">⭐ 4.9 Rating • 1,00,000+ Students</p></div>
+<div><h4>Quick Links</h4><a href="#courses">Popular Courses</a><a href="#career">Career Opportunity</a><a href="#test">Free Career Test</a><a href="#counsellor">Counsellors</a></div>
+<div><h4>Contact</h4><p>📍 Padrauna, Kushinagar, UP<br>📞 +91 93350 05055<br>✉️ hello@kushinaraedu.in<br>🕙 सुबह 9 बजे - रात 9 बजे</p></div>
+</div><div class="copy">© 2026 KushinaraEdu.in - Career Counselling & Guidance. All Rights Reserved. | Kushinagar • Padrauna • Deoria • Gorakhpur • Maharajganj</div></footer>
+
 <a class="whatsapp" href="https://wa.me/919335005055">💬 WhatsApp</a>
 <script>
-function selectOpt(btn, id){
-document.querySelectorAll('#'+id+' button').forEach(b=>b.classList.remove('active'));
-btn.classList.add('active');
-}
-function showResult(){
-let r=document.getElementById('result');
-r.innerHTML="✅ तुम्हारे लिए बेस्ट ऑप्शन: <span style='color:#ff6b00'>BNYS / Nursing / B.Ed</span> - पूरी डिटेल के लिए WhatsApp पर 'CAREER' लिखकर भेजो!";
-}
-function submitForm(){
-let n=document.getElementById('name').value;
-if(n==""){alert("कृपया नाम डालें");return;}
-document.getElementById('msg').innerHTML="धन्यवाद "+n+"! हमारी टीम 10 मिनट में कॉल करेगी।";
-window.open("https://wa.me/919335005055?text=Namaste, Mera Naam "+n+" hai, Mujhe Career Counselling Chahiye","_blank");
-}
+function selectOpt(btn,id){document.querySelectorAll('#'+id+' .opt').forEach(b=>b.classList.remove('active'));btn.classList.add('active');}
+function showResult(){document.getElementById('result').innerHTML="✅ तुम्हारे लिए बेस्ट ऑप्शन: <span style='color:#FF6B00'>BNYS / Nursing / B.Ed</span> - पूरी डिटेल के लिए WhatsApp पर 'CAREER' लिखकर भेजो!";}
+function submitForm(){let n=document.getElementById('name').value;let p=document.getElementById('phone').value;let c=document.getElementById('course').value;if(n==""){alert("कृपया नाम डालें");return;}document.getElementById('msg').innerHTML="धन्यवाद "+n+"! हमारी टीम 10 मिनट में कॉल करेगी।";window.open("https://wa.me/919335005055?text=Namaste, Mera Naam "+n+" hai, Mobile: "+p+", Course: "+c+", Mujhe Career Counselling Chahiye","_blank");}
 </script>
 </body>
 </html>
