@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KushinaraEdu - Career Counselling & Guidance | Kushinagar</title>
+<meta name="description" content="Kushinagar की No.1 Career Counselling वेबसाइट। 10th, 12th के बाद क्या करें? BNYS, Nursing, B.Ed, ITI, NEET की पूरी गाइडेंस।">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
+:root{--blue:#0f2a5c;--orange:#ff6b00;--green:#0aa65a;--light:#f4f7ff}
+body{background:#fff;color:#222}
+a{text-decoration:none}
+header{background:var(--blue);color:#fff;padding:12px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+.logo{font-size:22px;font-weight:900}.logo span{color:var(--orange)}
+nav a{color:#fff;margin:0 12px;font-weight:600;font-size:15px}
+.btn{background:var(--orange);color:#fff;padding:11px 22px;border-radius:30px;font-weight:700;display:inline-block;border:none;cursor:pointer}
+.hero{background:linear-gradient(90deg,#0f2a5c,#1a4aa0);color:#fff;padding:50px 5%;display:flex;gap:30px;align-items:center;flex-wrap:wrap}
+.hero h1{font-size:38px;line-height:1.2}.hero h1 span{color:#ffcc00}
+.hero p{margin:18px 0;font-size:17px;opacity:.9}
+.hero-box{background:#fff;color:#222;padding:22px;border-radius:16px;width:340px;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.hero-box h3{margin-bottom:12px}
+.hero-box input,.hero-box select{width:100%;padding:12px;margin:7px 0;border:1px solid #ddd;border-radius:8px}
+.section{padding:45px 5%}
+.section h2{text-align:center;font-size:30px;color:var(--blue);margin-bottom:8px}
+.section p.sub{text-align:center;color:#666;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{border:1px solid #eee;border-radius:14px;padding:20px;background:#fff;box-shadow:0 4px 15px rgba(0,0,0,.05)}
+.card h3{color:var(--blue);margin:10px 0}
+.card p{font-size:14px;color:#555;line-height:1.6}
+.badge{background:#e8f5ff;color:var(--blue);padding:5px 10px;border-radius:20px;font-size:12px;font-weight:700}
+.counsellor{text-align:center}
+.counsellor img{width:90px;height:90px;border-radius:50%;object-fit:cover;background:#ddd}
+.price{font-size:22px;font-weight:800;color:var(--green);margin:10px 0}
+.test{background:var(--light);border-radius:16px;padding:30px}
+.test button{margin:6px;padding:11px 18px;border-radius:20px;border:1px solid #ccc;background:#fff;cursor:pointer}
+.test button.active{background:var(--blue);color:#fff}
+footer{background:#0a1e40;color:#fff;padding:35px 5%;text-align:center}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 20px;border-radius:50px;font-weight:700;z-index:999;box-shadow:0 5px 20px rgba(0,0,0,.3)}
+@media(max-width:700px){.hero h1{font-size:28px}nav{display:none}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">Kushinara<span>Edu.in</span></div>
+<nav><a href="#home">Home</a><a href="#courses">Courses</a><a href="#test">Career Test</a><a href="#counsellor">Counsellors</a><a href="#contact">Contact</a></nav>
+<a class="btn" href="https://wa.me/919335005055">Free Counselling</a>
+</header>
+
+<section class="hero" id="home">
+<div style="flex:1;min-width:300px">
+<div style="background:#ff6b00;display:inline-block;padding:5px 12px;border-radius:20px;font-size:13px">🔥 Kushinagar • Padrauna • Deoria • Gorakhpur</div>
+<h1>10th / 12th के बाद <span>क्या करें?</span><br>अब Confusion नहीं, Clear Career।</h1>
+<p>1,00,000+ छात्रों की गाइडेंस। BNYS, Nursing, B.Ed, ITI, NEET, UPSC, Polytechnic - सही कोर्स, सही कॉलेज, सही फीस।</p>
+<a class="btn" href="#test">FREE Career Test लें →</a>
+<a class="btn" style="background:#fff;color:#0f2a5c;margin-left:8px" href="#courses">Courses देखें</a>
+<p style="font-size:13px;margin-top:12px">⭐ 4.9 Rating | 500+ Counsellors | 100% Free First Session</p>
+</div>
+
+<div class="hero-box">
+<h3>Free Counselling Form</h3>
+<input type="text" id="name" placeholder="आपका नाम">
+<input type="tel" id="phone" placeholder="Mobile Number">
+<select><option>Class चुनें</option><option>Class 10th</option><option>Class 12th - Science</option><option>Class 12th - Arts</option><option>Class 12th - Commerce</option><option>Graduate</option></select>
+<select><option>Interested Course</option><option>BNYS</option><option>Nursing / ANM / GNM</option><option>B.Ed / D.El.Ed</option><option>ITI / Polytechnic</option><option>NEET / MBBS</option><option>UPSC / Govt Job</option></select>
+<button class="btn" style="width:100%" onclick="submitForm()">Free Guidance पाएं</button>
+<p id="msg" style="color:green;font-weight:700;margin-top:8px"></p>
+</div>
+</section>
+
+<section class="section" id="courses">
+<h2>Popular Career Options</h2>
+<p class="sub">Kushinagar के छात्रों के लिए सबसे ज्यादा डिमांड वाले कोर्स</p>
+<div class="grid">
+<div class="card"><span class="badge">TOP CHOICE</span><h3>🩺 BNYS - Naturopathy</h3><p>बिना ऑपरेशन, बिना दवा - Natural Doctor बनो। 5.5 साल कोर्स। सरकारी + प्राइवेट दोनों में नौकरी।</p><p><b>Fees:</b> ₹60k - 1.5L / Year<br><b>Salary:</b> ₹35k - 80k</p><a href="https://wa.me/919335005055?text=BNYS की जानकारी चाहिए" class="btn">Details लें</a></div>
+<div class="card"><span class="badge">HIGH DEMAND</span><h3>👩‍⚕️ Nursing - ANM / GNM / B.Sc</h3><p>हर अस्पताल को नर्स चाहिए। विदेश में भी सबसे ज्यादा डिमांड। 2 से 4 साल कोर्स।</p><p><b>Fees:</b> ₹50k - 1L / Year<br><b>Salary:</b> ₹25k - 60k</p><a href="https://wa.me/919335005055?text=Nursing की जानकारी चाहिए" class="btn">Details लें</a></div>
+<div class="card"><span class="badge">GOVT JOB</span><h3>📚 B.Ed / D.El.Ed</h3><p>Teacher बनना है तो यही रास्ता है। सरकारी स्कूल में पक्की नौकरी।</p><p><b>Fees:</b> ₹40k - 80k<br><b>Salary:</b> ₹40k - 70k</p><a href="https://wa.me/919335005055?text=B.Ed की जानकारी चाहिए" class="btn">Details लें</a></div>
+<div class="card"><span class="badge">QUICK JOB</span><h3>🔧 ITI / Polytechnic</h3><p>10th के बाद जल्दी नौकरी। Electrician, Fitter, Computer, Mechanical।</p><p><b>Fees:</b> ₹15k - 40k<br><b>Salary:</b> ₹18k - 40k</p><a href="https://wa.me/919335005055?text=ITI की जानकारी चाहिए" class="btn">Details लें</a></div>
+<div class="card"><span class="badge">MEDICAL</span><h3>🩸 NEET / Paramedical</h3><p>MBBS, BAMS, BUMS, DMLT, X-Ray, Physiotherapy।</p><p><b>Fees:</b> Varies<br><b>Salary:</b> ₹30k - 1L+</p><a href="https://wa.me/919335005055?text=NEET की जानकारी चाहिए" class="btn">Details लें</a></div>
+<div class="card"><span class="badge">SARKARI</span><h3>🇮🇳 UPSC / UP Police / SSC</h3><p>बिना ज्यादा फीस के सरकारी नौकरी की तैयारी। सही रणनीति से 1 साल में सफलता।</p><p><b>Fees:</b> ₹10k - 30k<br><b>Salary:</b> ₹35k - 80k</p><a href="https://wa.me/919335005055?text=Govt Job की जानकारी चाहिए" class="btn">Details लें</a></div>
+</div>
+</section>
+
+<section class="section test" id="test">
+<h2>2 मिनट का FREE Career Test</h2>
+<p class="sub">अपनी रुचि चुनो, हम बताएँगे तुम्हारे लिए बेस्ट करियर क्या है</p>
+<h3>1. तुम्हें सबसे ज्यादा मजा किसमें आता है?</h3>
+<div id="q1">
+<button onclick="selectOpt(this,'q1')">लोगों की सेवा / इलाज में</button>
+<button onclick="selectOpt(this,'q1')">पढ़ाने / समझाने में</button>
+<button onclick="selectOpt(this,'q1')">मशीन / कंप्यूटर ठीक करने में</button>
+<button onclick="selectOpt(this,'q1')">बिजनेस / पैसे कमाने में</button>
+</div>
+<h3 style="margin-top:18px">2. तुम कितने साल पढ़ना चाहते हो?</h3>
+<div id="q2">
+<button onclick="selectOpt(this,'q2')">1-2 साल - जल्दी नौकरी</button>
+<button onclick="selectOpt(this,'q2')">3-4 साल - अच्छा करियर</button>
+<button onclick="selectOpt(this,'q2')">5+ साल - Doctor / Officer</button>
+</div>
+<button class="btn" style="margin-top:20px" onclick="showResult()">Result देखें</button>
+<p id="result" style="font-weight:700;font-size:18px;color:#0f2a5c;margin-top:12px"></p>
+</section>
+
+<section class="section" id="counsellor">
+<h2>हमारे Expert Counsellors</h2>
+<p class="sub">Kushinagar के अपने लोग, जो खुद इन रास्तों से गुजरे हैं</p>
+<div class="grid">
+<div class="card counsellor"><img src="https://via.placeholder.com/90"><h3>Dr. [आपका नाम]</h3><p>BNYS Expert<br>5+ Years Experience</p><p class="price">1st Session FREE</p><a class="btn" href="https://wa.me/919335005055">Book Session</a></div>
+<div class="card counsellor"><img src="https://via.placeholder.com/90"><h3>Er. Rahul Kushwaha</h3><p>ITI / Polytechnic Expert<br>Govt Job Guide</p><p class="price">1st Session FREE</p><a class="btn" href="https://wa.me/919335005055">Book Session</a></div>
+<div class="card counsellor"><img src="https://via.placeholder.com/90"><h3>Ms. Priya Singh</h3><p>Nursing / NEET Expert<br>Delhi AIIMS Alumni</p><p class="price">1st Session FREE</p><a class="btn" href="https://wa.me/919335005055">Book Session</a></div>
+</div>
+</section>
+
+<section class="section" style="background:#fff8e6;border-radius:16px;margin:0 5%">
+<h2>Success Stories - Kushinagar के बच्चे</h2>
+<div class="grid">
+<div class="card">⭐⭐⭐⭐⭐<p>"12th के बाद मैं बहुत Confused था। KushinaraEdu ने मुझे BNYS बताया, आज मैं Padrauna में अपना क्लिनिक चला रहा हूँ।"</p><b>- Aman, Padrauna</b></div>
+<div class="card">⭐⭐⭐⭐⭐<p>"ANM करके आज मैं Gorakhpur के अस्पताल में ₹28,000 पर हूँ। Free Counselling ने मेरी जिंदगी बदल दी।"</p><b>- Pooja, Kushinagar</b></div>
+<div class="card">⭐⭐⭐⭐⭐<p>"ITI करके ITI Instructor बन गया। 10th के बाद सही गाइडेंस मिली।"</p><b>- Vikas, Deoria</b></div>
+</div>
+</section>
+
+<section class="section" id="contact" style="text-align:center">
+<h2>आज ही Free Counselling लो</h2>
+<p class="sub">फॉर्म भरो या सीधे WhatsApp करो - 10 मिनट में जवाब मिलेगा</p>
+<p style="font-size:20px"><b>📍</b> Padrauna, Kushinagar, UP - 274304<br><b>📞</b> +91 93350 05055<br><b>✉️</b> hello@kushinaraedu.in</p><br>
+<a class="btn" href="https://wa.me/919335005055?text=Namaste, Mujhe Career Counselling Chahiye">WhatsApp पर बात करें</a>
+</section>
+
+<footer>
+<h3>KushinaraEdu.in</h3>
+<p>Kushinagar • Padrauna • Deoria • Gorakhpur • Maharajganj</p>
+<p style="margin-top:10px;font-size:13px;opacity:.7">© 2026 KushinaraEdu.in - Career Counselling & Guidance. All Rights Reserved.</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919335005055">💬 WhatsApp</a>
+
+<script>
+function selectOpt(btn, id){
+document.querySelectorAll('#'+id+' button').forEach(b=>b.classList.remove('active'));
+btn.classList.add('active');
+}
+function showResult(){
+let r=document.getElementById('result');
+r.innerHTML="✅ तुम्हारे लिए बेस्ट ऑप्शन: <span style='color:#ff6b00'>BNYS / Nursing / B.Ed</span> - पूरी डिटेल के लिए WhatsApp पर 'CAREER' लिखकर भेजो!";
+}
+function submitForm(){
+let n=document.getElementById('name').value;
+if(n==""){alert("कृपया नाम डालें");return;}
+document.getElementById('msg').innerHTML="धन्यवाद "+n+"! हमारी टीम 10 मिनट में कॉल करेगी।";
+window.open("https://wa.me/919335005055?text=Namaste, Mera Naam "+n+" hai, Mujhe Career Counselling Chahiye","_blank");
+}
+</script>
+</body>
+</html>
